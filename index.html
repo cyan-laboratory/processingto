@@ -2,15 +2,15 @@
 <script type="text/processing" data-processing-target="mycanvas">
 void setup()
 {
-  size(600,500);
+  size(800,600);
   background(0);
   fill(100,100,250);
   noLoop();
   PFont fontA = loadFont("courier");
-  textFont(fontA, 20);  
+  textFont(fontA, 17);  
 }
 
-void draw(){  scale(1,-1);
+void draw(){  scale(-1,1);
   text("Hello Web!",250,120);
   text("get out !",250,130);
   println("Hello ErrorLog!");
