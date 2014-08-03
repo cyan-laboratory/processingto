@@ -1,6 +1,10 @@
 <script src="js/processing.min.js"></script>
 <script type="text/processing" data-processing-target="mycanvas">
-void setup()
+  
+  
+  PShape hud;
+
+  void setup()
 {
   size(800,600);
   background(10);
@@ -8,16 +12,25 @@ void setup()
   noLoop();
   textFont(createFont("Arial", 60));  
 
+  hud = loadShape("HUD.svg");
 }
+
 
 void draw(){  
   
-  
+       shape(hud, 450, 45, 500,500);  // Draw at coordinate (110, 90) at size 100 x 100
+
   pushMatrix();
   scale(1, -1);
   text("Test", 220, -150);
+  String s = "The quick brown fox jumped over the lazy dog.";
+fill(250);
+textFont(createFont("Arial", 6));  
+text(s, 220, -150, 70, 80);  // Text wraps within text box
   
-    fill(250,250,250);
+ 
+textFont(createFont("Arial", 60));   
+    fill(250,250,250,50);
   text("Test2", 500, -150);
         fill(100,100,250);
 
@@ -26,10 +39,12 @@ void draw(){
   strokeWeight(5); 
    ellipse(220,-150,300,300);
    ellipse(500,-150,300,300);
-   
+
   popMatrix();
   println("Hello ErrorLog!");
 
+
 }
+
 </script>
 <canvas id="mycanvas"></canvas>
