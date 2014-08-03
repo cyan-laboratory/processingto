@@ -19,7 +19,7 @@
 void draw(){  
   
     //   shape(hud, 450, 45, 500,500);  // Draw at coordinate (110, 90) at size 100 x 100
-
+radius = radius + sin( frameCount / 4);
   pushMatrix();
   scale(1, -1);
   text("Test", 220, -150);
@@ -38,7 +38,7 @@ textFont(createFont("Arial", 60));
   
   strokeWeight(5); 
   
-radius = radius + sin( frameCount / 4);
+
    ellipse(220,-150,radius,radius);
    ellipse(500,-150,radius,radius);
 
