@@ -39,14 +39,8 @@ void draw(){
   // Draw circle
   ellipse( X, Y, radius, radius );      
   ellipse( X+100, Y, radius, radius );  
+    if(mousePressed)  ellipse(mouseX, mouseY, 20,20);
   
-   for(int i = 0; i <= width; i += 20) {
-    for(int j = 0; j <= width; j += 20) {
-      float size = dist(mouseX, mouseY, i, j);
-      size = size/max_distance * 66;  fill( 0, 121, 184 );
-      ellipse(i, j, size, size);
-    }
-  }
 }
 
 
