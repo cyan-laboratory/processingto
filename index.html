@@ -3,7 +3,7 @@
   
   
 //  PShape hud;
-
+ long  radius =0;
   void setup()
 {
   size(1280,720);
@@ -38,7 +38,7 @@ textFont(createFont("Arial", 60));
   
   strokeWeight(5); 
   
- long  radius = 270 + sin( frameCount / 2 );
+radius = 270 + sin( frameCount / 2 );
    ellipse(220,-150,radius,radius);
    ellipse(500,-150,radius,radius);
 
