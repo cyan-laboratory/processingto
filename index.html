@@ -37,8 +37,10 @@ textFont(createFont("Arial", 60));
   noFill();  stroke(250);
   
   strokeWeight(5); 
-   ellipse(220,-150,270,270);
-   ellipse(500,-150,270,270);
+  
+ long  radius = 270 + sin( frameCount / 2 );
+   ellipse(220,-150,radius,radius);
+   ellipse(500,-150,radius,radius);
 
   popMatrix();
   println("Hello ErrorLog!");
