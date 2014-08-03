@@ -17,22 +17,22 @@
 
 
 void draw(){  
-  radius+=1;
+  radius+=4;
   background(10);
 radius=radius%150;
     //   shape(hud, 450, 45, 500,500);  // Draw at coordinate (110, 90) at size 100 x 100
   pushMatrix();
   scale(1, -1);
-  text("Test", 220, -150);
+  text("Test", 210, -300);
   String s = "The quick brown fox jumped over the lazy dog.";
 fill(250);
 textFont(createFont("Arial", 12));  
-text(s, 220, -150, 70, 80);  // Text wraps within text box
+text(s, 220, -300, 70, 80);  // Text wraps within text box
   
  
 textFont(createFont("Arial", 60));   
-    fill(250,250,250,50);
-  text("Test2", 500, -150);
+  fill(100,100,250);
+  text("Test", 500, -300);
         fill(100,100,250);
 
 
@@ -42,8 +42,8 @@ textFont(createFont("Arial", 60));
   
 
 
-   ellipse(220,-150,radius,radius);
-   ellipse(500,-150,radius,radius);
+   ellipse(220,-300,radius,radius);
+   ellipse(500,-300,radius,radius);
 
 
   popMatrix();
