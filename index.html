@@ -17,7 +17,7 @@
 
 
 void draw(){  
-  radius+=4;
+  radius+=2;
   background(10);
 radius=radius%150;
     //   shape(hud, 450, 45, 500,500);  // Draw at coordinate (110, 90) at size 100 x 100
@@ -32,7 +32,7 @@ text(s, 220, -300, 70, 80);  // Text wraps within text box
  
 textFont(createFont("Arial", 60));   
   fill(100,100,250);
-  text("Test", 500, -300);
+  text("Test", 490, -300);
         fill(100,100,250);
 
 
@@ -41,9 +41,10 @@ textFont(createFont("Arial", 60));
   strokeWeight(5); 
   
 
+rect(210, 300, 55, 270, 272);rect(490, 300, 55, 270, 272);
 
-   ellipse(220,-300,radius,radius);
-   ellipse(500,-300,radius,radius);
+   ellipse(210,-300,radius,radius);
+   ellipse(490,-300,radius,radius);
 
 
   popMatrix();
