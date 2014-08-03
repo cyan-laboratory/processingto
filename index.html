@@ -2,17 +2,24 @@
 <script type="text/processing" data-processing-target="mycanvas">
 void setup()
 {
-  size(600,500);
-  background(125);
-  fill(255);
+  size(800,600);
+  background(10);
+  fill(100,100,250);
   noLoop();
   PFont fontA = loadFont("courier");
-  textFont(fontA, 14);  
+  textFont(fontA, 17);  
 }
 
-void draw(){  rotateY(radians(90));
-  text("Hello Web!",20,20);
-  text("get out !",20,20);
+void draw(){  
+  
+  
+   pushMatrix();
+   rotare(PI);
+text("Hello Web!",10,0);
+  text("get out !",10,0);
+  
+  text("Test", 10,0);
+  popMatrix();
   println("Hello ErrorLog!");
 }
 </script>
