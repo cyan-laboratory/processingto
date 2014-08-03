@@ -1,27 +1,26 @@
 <script src="js/processing.min.js"></script>
 <script type="text/processing" data-processing-target="mycanvas">
-  
-  
+ 
 //  PShape hud;
- long  radius =10;
+ float  radius =10;
   void setup()
 {
   size(1280,720);
   background(10);
   fill(100,100,250);
-  noLoop();
+
   textFont(createFont("Arial", 60));  
-  frameRate( 15 );
   //hud = loadShape("HUD.svg");
 }
 
 
+
+
 void draw(){  
-  radius++;
-  
-  radius=radius % 270;
+  radius+=1;
+  background(10);
+radius=radius%270;
     //   shape(hud, 450, 45, 500,500);  // Draw at coordinate (110, 90) at size 100 x 100
-radius = radius + sin( frameCount / 4);
   pushMatrix();
   scale(1, -1);
   text("Test", 220, -150);
@@ -36,19 +35,25 @@ textFont(createFont("Arial", 60));
   text("Test2", 500, -150);
         fill(100,100,250);
 
+
   noFill();  stroke(250);
   
   strokeWeight(5); 
   
 
+
    ellipse(220,-150,radius,radius);
    ellipse(500,-150,radius,radius);
+
 
   popMatrix();
   println("Hello ErrorLog!");
 
 
+
+
 }
+
 
 </script>
 <canvas id="mycanvas"></canvas>
