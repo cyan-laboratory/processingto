@@ -3,21 +3,19 @@
 void setup()
 {
   size(800,600);
-  background(0);
+  background(10);
   fill(100,100,250);
   noLoop();
-  PFont fontA = loadFont("courier");
-  textFont(fontA, 17);  
+  textFont(createFont("Arial", 25));  
+
 }
 
 void draw(){  
   
   
-   pushMatrix();
-text("Hello Web!",250,120);
-  text("get out !",250,130);
-  
-  text("Test", 250,110);
+  pushMatrix();
+  scale(1, -1);
+  text("Test", 75, -100);
   popMatrix();
   println("Hello ErrorLog!");
 }
