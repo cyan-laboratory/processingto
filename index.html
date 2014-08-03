@@ -2,7 +2,7 @@
 <script type="text/processing" data-processing-target="mycanvas">
  
 //  PShape hud;
- float  radius =10;
+ float  radius =100;
   void setup()
 {
   size(1280,720);
@@ -19,7 +19,7 @@
 void draw(){  
   radius+=1;
   background(10);
-radius=radius%270;
+radius=radius%150;
     //   shape(hud, 450, 45, 500,500);  // Draw at coordinate (110, 90) at size 100 x 100
   pushMatrix();
   scale(1, -1);
