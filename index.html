@@ -6,7 +6,7 @@ float radius = 50.0;
 int X, Y;
 int nX, nY;
 int delay = 16;
-
+float max_distance;
 // Setup the Processing Canvas
 void setup(){
   size( 400, 400 );
@@ -38,7 +38,15 @@ void draw(){
   
   // Draw circle
   ellipse( X, Y, radius, radius );      
-  ellipse( X+100, Y, radius, radius );    
+  ellipse( X+100, Y, radius, radius );  
+  
+   for(int i = 0; i <= width; i += 20) {
+    for(int j = 0; j <= width; j += 20) {
+      float size = dist(mouseX, mouseY, i, j);
+      size = size/max_distance * 66;
+      ellipse(i, j, size, size);
+    }
+  }
 }
 
 
