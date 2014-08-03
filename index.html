@@ -11,7 +11,7 @@
   fill(100,100,250);
   noLoop();
   textFont(createFont("Arial", 60));  
-
+  frameRate( 15 );
   //hud = loadShape("HUD.svg");
 }
 
@@ -38,7 +38,7 @@ textFont(createFont("Arial", 60));
   
   strokeWeight(5); 
   
-radius = radius + sin( frameCount / 2 );
+radius = radius + sin( frameCount / 4);
    ellipse(220,-150,radius,radius);
    ellipse(500,-150,radius,radius);
 
