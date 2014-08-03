@@ -3,7 +3,7 @@
   
   
 //  PShape hud;
- long  radius =270;
+ long  radius =10;
   void setup()
 {
   size(1280,720);
@@ -18,6 +18,8 @@
 
 void draw(){  
   radius++;
+  
+  radius=radius % 270;
     //   shape(hud, 450, 45, 500,500);  // Draw at coordinate (110, 90) at size 100 x 100
 radius = radius + sin( frameCount / 4);
   pushMatrix();
