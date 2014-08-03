@@ -17,13 +17,13 @@
 
 
 void draw(){  
-  radius+=2;
+  radius+=2;translate(50, -50);
   background(10);
 radius=radius%150;
     //   shape(hud, 450, 45, 500,500);  // Draw at coordinate (110, 90) at size 100 x 100
   pushMatrix();
   scale(1, -1);
-  text("Test", 210, -300);
+  text("Test", 235, -300);
   String s = "The quick brown fox jumped over the lazy dog.";
 fill(250);
 textFont(createFont("Arial", 12));  
@@ -43,7 +43,7 @@ textFont(createFont("Arial", 60));
 
 rect(130, -400, 170, 170, 7);rect(400, -400, 170, 170, 7);
 
-   ellipse(210,-300,radius,radius);
+   ellipse(235,-300,radius,radius);
    ellipse(490,-300,radius,radius);
 
 
