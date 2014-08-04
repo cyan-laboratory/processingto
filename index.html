@@ -21,11 +21,38 @@ void draw(){
   background(10);
 radius=radius%150;
     //   shape(hud, 450, 45, 500,500);  // Draw at coordinate (110, 90) at size 100 x 100
-  pushMatrix();
+
   scale(1, -1);
-  text("Test", 150, -250);
+
+
+
+
+
+  
+  strokeWeight(5); 
+  
+
+
+
+ 
+
+
+  pushMatrix();
+  
+    text("Test", 150, -250);
   String s = "The quick brown fox jumped over the lazy dog.";
-fill(250);
+  
+    noFill();  stroke(250);
+    
+  rect(130, -400, 170, 170, 7);
+  ellipse(235,-300,radius,radius);
+  popMatrix();
+  
+  
+  
+  
+  pushMatrix();
+  fill(250);
 textFont(createFont("Arial", 12));  
 text(s, 230, -300, 70, 80);  // Text wraps within text box
   
@@ -34,18 +61,10 @@ textFont(createFont("Arial", 35));
   fill(250,100,250);
   text("attention",440, -300);
         fill(250,250,250);
-
-
-  noFill();  stroke(250);
   
-  strokeWeight(5); 
-  
-
-rect(130, -400, 170, 170, 7);rect(400, -400, 170, 170, 7);
-
-   ellipse(235,-300,radius,radius);
-   ellipse(490,-300,radius,radius);
-
+    noFill();  stroke(250);
+  rect(400, -400, 170, 170, 7);
+  ellipse(490,-300,radius,radius);
 
   popMatrix();
   println("Hello ErrorLog!");
