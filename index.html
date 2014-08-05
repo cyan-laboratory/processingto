@@ -80,7 +80,17 @@ int delay = 16;
 
 
 void draw(){  
-  radius+=5;translate(250, -50);
+  
+     fill(0,0,250);
+    ellipse( X, Y, radius1, radius1 );  
+  radius1 = radius1 + sin( frameCount / 4 );
+   // Track circle to new destination
+  X+=(nX-X)/delay;
+  Y+=(nY-Y)/delay;
+  // Draw circle
+  
+   pushMatrix();
+ radius+=5;translate(250, -50);
   background(10);
 radius=radius%150;
     //   shape(hud, 450, 45, 500,500);  // Draw at coordinate (110, 90) at size 100 x 100
@@ -128,17 +138,12 @@ textFont(createFont("Arial", 35));
     noFill();  stroke(250);
   rect(400, -400, 170, 170, 7);
   ellipse(490,-300,radius,radius);
-  
-    ellipse( X, Y, radius1, radius1 );  
-  radius1 = radius1 + sin( frameCount / 4 );
-   // Track circle to new destination
-  X+=(nX-X)/delay;
-  Y+=(nY-Y)/delay;
-  // Draw circle
-  fill(0,0,250);
+
+ 
 
   popMatrix();
 
+ popMatrix();
 
   
   
@@ -146,7 +151,7 @@ textFont(createFont("Arial", 35));
 }
 
 void mouseMoved(){
-    scale(1, -1);
+
   nX = mouseY;
   nY =mouseX ;  
 }
