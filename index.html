@@ -3,25 +3,27 @@
 <head>
 
 
-<style type="text/css" media="screen">
-    #printhead {display:none;}
+  <style type="text/css">
+    /* <![CDATA[ */
 
-    html {
-        height:100%; 
-        max-height:100%; 
-        width:100%; 
-        max-width:100%; 
-        padding:0; 
-        margin:0; 
-        border:0; 
-        background:#fff; 
-        font-size:80%; 
-        font-family: "trebuchet ms", tahoma, verdana, arial, sans-serif;
-        /* hide overflow:hidden from IE5/Mac */ 
-        /* \*/ 
-        /*overflow: hidden;*/ 
-        /* */ 
-    }
+      body {
+        margin: 0px 0px 0px 5px;
+        font-family: verdana, geneva, arial, helvetica, sans-serif;
+        font-size: 11px;
+        background-color: #ddddcc; 
+        text-decoration: none; 
+        font-weight: normal;
+        line-height: normal;  
+      }
+               
+      a          { color: #3399cc; }
+      a:link     { color: #3399cc; text-decoration: underline; }
+      a:visited  { color: #3399cc; text-decoration: underline; }
+      a:active   { color: #3399cc; text-decoration: underline; }
+      a:hover    { color: #3399cc; text-decoration: underline; }
+
+    /* ]]> */
+  </style>  
 
     body {height:100%; max-height:100%; overflow:hidden; padding:0; margin:0; border:0;}
 
@@ -154,10 +156,10 @@ textFont(createFont("Arial", 35));
   rect(400, -400, 170, 170, 7);
   ellipse(490,-300,radius,radius);
    // Track circle to new destination
-  X+=(nX-X)/delay;
+  nX+=(nX-X)/delay;
   Y+=(nY-Y)/delay;
   // Draw circle
-  fill(250,100,250);
+  fill(0,0,250);
   ellipse( X, Y, radius1, radius1 );  
 
   popMatrix();
