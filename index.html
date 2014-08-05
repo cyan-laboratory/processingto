@@ -81,7 +81,7 @@ int delay = 16;
 
 void draw(){  
     background(0);
-     fill(0,0,250);
+    fill(0,0,250);
     ellipse( X, Y, radius1, radius1 );  
   radius1 = radius1 + sin( frameCount / 4 );
    // Track circle to new destination
@@ -99,16 +99,7 @@ radius=radius%150;
   strokeWeight(5); 
   
   
-    pushMatrix();
-  
-    text("Test", 150, -250);
-  String s = "The quick brown fox jumped over the lazy dog.";
-  
-    noFill();  stroke(250);
-    
-  rect(130, -400, 170, 170, 7);
-  ellipse(235,-300,radius,radius);
-  popMatrix();
+   
   
   
   
@@ -131,7 +122,7 @@ textFont(createFont("Arial", 35));
 
   popMatrix();
   
-  screen2();
+  screen1(              );
   screen();
 
 
@@ -142,7 +133,16 @@ void screen2(){
 
   }
 
-void  screen() {   }
+void  screen() {  pushMatrix();scale(1, -1);
+  
+    text("Test", 150, -250);
+  String s = "The quick brown fox jumped over the lazy dog.";
+  
+    noFill();  stroke(250);
+    
+  rect(130, -400, 170, 170, 7);
+  ellipse(235,-300,radius,radius);
+  popMatrix();  }
 
 void mouseMoved(){
 
