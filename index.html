@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+if ((navigator.userAgent.match(/Android/i)) && (navigator.userAgent.toLowerCase().indexOf('chrome') > -1)) {
+isAndroidChrome = true;    
+}
+var viewportmeta = document.querySelector('meta[name="viewport"]');
   <style type="text/css">
     /* <![CDATA[ */
 
