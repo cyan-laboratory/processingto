@@ -90,7 +90,7 @@ void draw(){
   // Draw circle
   
    pushMatrix();
- radius+=5;translate(250, -50);
+ radius+=5;
 
 radius=radius%150;
     //   shape(hud, 450, 45, 500,500);  // Draw at coordinate (110, 90) at size 100 x 100
@@ -121,7 +121,7 @@ void screen2(){
 
   }
 
-void  screen() {   pushMatrix();
+void  screen() {   pushMatrix();translate(250, -50);
   fill(250);
 textFont(createFont("Arial", 15));  
 text(s, 230, -300, 70, 80);  // Text wraps within text box
