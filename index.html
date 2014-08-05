@@ -145,13 +145,15 @@ void screen1() {
  scale(1,-1);
  noFill();   strokeWeight(2); 
 stroke(250,0,0);
-   rect(200, -300, 170, 170, 7);
+ 
    rect(410, -300, 170, 170, 7);
   textFont(createFont("Arial", 35));   
   fill(250,10,10);
-  text("attention",210, -150);
+ 
   text("attention",420, -150);
-
+  String s = "The quick brown fox jumped over the lazy dog.";
+  textFont(createFont("Arial", 15));  
+text(s, 400, -160, 70, 80);  // Text wraps within text box
 
     popMatrix();
    }
@@ -168,13 +170,15 @@ stroke(250,0,0);
  noFill();   strokeWeight(2); 
 stroke(250,0,0);
    rect(200, -300, 170, 170, 7);
-   rect(410, -300, 170, 170, 7);
+ 
   textFont(createFont("Arial", 35));   
   fill(250,10,10);
   text("attention",210, -160);
-  text("attention",420, -160);
+ 
 
-
+  String s = "The quick brown fox jumped over the lazy dog.";
+  textFont(createFont("Arial", 15));  
+text(s, 230, -160, 70, 80);  // Text wraps within text box
     popMatrix();
      
      
