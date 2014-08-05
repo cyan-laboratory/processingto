@@ -54,11 +54,10 @@ window.scrollTo(250,80);
  float  radius =100;
   float  radius1 =50.0;
  
- float radius = 50.0;
+
 int X, Y;
 int nX, nY;
 int delay = 16;
-
   void setup()
 {
   size(990,500);
@@ -129,16 +128,18 @@ textFont(createFont("Arial", 35));
     noFill();  stroke(250);
   rect(400, -400, 170, 170, 7);
   ellipse(490,-300,radius,radius);
+  
+    ellipse( X, Y, radius1, radius1 );  
+  radius1 = radius1 + sin( frameCount / 4 );
    // Track circle to new destination
   X+=(nX-X)/delay;
   Y+=(nY-Y)/delay;
   // Draw circle
   fill(0,0,250);
-  ellipse( X, Y, radius1, radius1 );  
 
   popMatrix();
 
-  radius1 = radius1 + sin( frameCount / 4 );
+
   
   
 
