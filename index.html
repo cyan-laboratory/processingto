@@ -88,7 +88,7 @@ void draw(){
   X+=(nX-X)/delay;
   Y+=(nY-Y)/delay;
   // Draw circle
-  
+  translate(250, -50);
    pushMatrix();
  radius+=5;
 
@@ -110,18 +110,9 @@ radius=radius%150;
   ellipse(235,-300,radius,radius);
   popMatrix();
   
-  screen2();
-  screen();
-
-
- popMatrix();
-}
-void screen2(){
-
-
-  }
-
-void  screen() {   pushMatrix();translate(250, -50);
+  
+  
+  pushMatrix();
   fill(250);
 textFont(createFont("Arial", 15));  
 text(s, 230, -300, 70, 80);  // Text wraps within text box
@@ -138,7 +129,20 @@ textFont(createFont("Arial", 35));
 
  
 
-  popMatrix();}
+  popMatrix();
+  
+  screen2();
+  screen();
+
+
+ popMatrix();
+}
+void screen2(){
+
+
+  }
+
+void  screen() {   }
 
 void mouseMoved(){
 
