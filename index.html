@@ -100,7 +100,16 @@ radius=radius%150;
   
   
    
+  pushMatrix();
   
+    text("Test", 150, -250);
+  String s = "The quick brown fox jumped over the lazy dog.";
+  
+    noFill();  stroke(250);
+    
+  rect(130, -400, 170, 170, 7);
+  ellipse(235,-300,radius,radius);
+  popMatrix(); 
   
   
   pushMatrix();
@@ -133,16 +142,7 @@ void screen2(){
 
   }
 
-void  screen() {  pushMatrix();
-  
-    text("Test", 150, -250);
-  String s = "The quick brown fox jumped over the lazy dog.";
-  
-    noFill();  stroke(250);
-    
-  rect(130, -400, 170, 170, 7);
-  ellipse(235,-300,radius,radius);
-  popMatrix();  }
+void  screen() {   }
 
 void mouseMoved(){
 
