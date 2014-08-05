@@ -3,7 +3,7 @@
 <head>
 if ((navigator.userAgent.match(/Android/i)) && (navigator.userAgent.toLowerCase().indexOf('chrome') > -1)) {
 isAndroidChrome = true;    
-}<meta name="viewport" content="width=1280, initial-scale=.5, maximum-scale=.5, minimum-scale=.5" />
+}<meta name="viewport" content="width=1280, initial-scale=.56, maximum-scale=.56, minimum-scale=.56" />
 var viewportmeta = document.querySelector('meta[name="viewport"]');
   <style type="text/css">
     /* <![CDATA[ */
@@ -64,7 +64,7 @@ int delay = 16;
   void setup()
 {
   size(990,500);
-  background(10);
+  background(50);
   fill(100,100,250);
   println("Hello ErrorLog!");
 
@@ -83,7 +83,7 @@ int delay = 16;
 
 
 void draw(){  
-    background(10);
+    background(50);
      fill(0,0,250);
     ellipse( X, Y, radius1, radius1 );  
   radius1 = radius1 + sin( frameCount / 4 );
