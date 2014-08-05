@@ -109,12 +109,15 @@ void draw(){
 }
 
 void screen() {      
+  pushMatrix();
   scale(1,-1);
    rect(100, -200, 170, 170, 7);
-   rect(100, 200, 170, 170, 7);
+   rect(-100, -200, 170, 170, 7);
  
-    
-    
+      textFont(createFont("Arial", 35));   
+  fill(250,10,10);
+  text("attention",440, -300);
+    popMatrix();
    }
 
 
