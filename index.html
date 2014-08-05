@@ -80,7 +80,7 @@ int delay = 16;
 
 
 void draw(){  
-  
+    background(10);
      fill(0,0,250);
     ellipse( X, Y, radius1, radius1 );  
   radius1 = radius1 + sin( frameCount / 4 );
@@ -91,7 +91,7 @@ void draw(){
   
    pushMatrix();
  radius+=5;translate(250, -50);
-  background(10);
+
 radius=radius%150;
     //   shape(hud, 450, 45, 500,500);  // Draw at coordinate (110, 90) at size 100 x 100
 
