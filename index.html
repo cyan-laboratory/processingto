@@ -96,16 +96,10 @@ radius=radius%150;
     //   shape(hud, 450, 45, 500,500);  // Draw at coordinate (110, 90) at size 100 x 100
 
   scale(1, -1);
-  strokeWeight(2); 
-  screen2();
-  screen();
-
-
- popMatrix();
-}
-void screen2(){
-
-  pushMatrix();
+  strokeWeight(5); 
+  
+  
+    pushMatrix();
   
     text("Test", 150, -250);
   String s = "The quick brown fox jumped over the lazy dog.";
@@ -115,6 +109,16 @@ void screen2(){
   rect(130, -400, 170, 170, 7);
   ellipse(235,-300,radius,radius);
   popMatrix();
+  
+  screen2();
+  screen();
+
+
+ popMatrix();
+}
+void screen2(){
+
+
   }
 
 void  screen() {   pushMatrix();
