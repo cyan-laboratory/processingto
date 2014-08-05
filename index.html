@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 
+<!DOCTYPE html>
+
+
 <html>
 <head>
   <meta name="viewport" content="width=1400,height=600, initial-scale=.5, maximum-scale=.5, minimum-scale=.5" />
   <style type="text/css">
     /* <![CDATA[ */
+
+
 
 
       body {
@@ -24,11 +29,19 @@
       a:hover    { color: #3399cc; text-decoration: underline; }
 
 
+
+
     /* ]]> */
   </style>  
 
 
+
+
 </head>
+
+
+
+
 
 
 
@@ -38,7 +51,15 @@
 <p>Click the button to scroll the document window to the horizontal position 500.</p>
 
 
+
+
 <button onclick="scrollWin()">Click me to scroll horizontally!</button><br><br>
+
+
+
+
+
+
 
 
 
@@ -61,7 +82,19 @@ window.scrollTo(250,80);
 
 
 
+
+
+
+
+
+
+
+
+
+
 <script src="js/processing.min.js"></script>
+
+
 
 
 <script type="text/processing" data-processing-target="mycanvas">
@@ -70,6 +103,8 @@ window.scrollTo(250,80);
  float  radius =100;
   float  radius1 =50.0;
  
+
+
 
 
 int X, Y;
@@ -83,6 +118,8 @@ int delay = 16;
   println("Hello ErrorLog!");
 
 
+
+
   textFont(createFont("Arial", 35));  
   //hud = loadShape("HUD.svg");
   
@@ -94,33 +131,26 @@ int delay = 16;
   nY = Y;  
 }
 void draw(){  
-    background(200);
+    background(0);
    
-
-fill(250,10,10);
- 
-
-
-   rect(410, -300, 170, 170, 7);
- 
- 
+      screen();
+    
 }
 
-void screen()1 {      
- 
-   }
 
-void screen()2 {      
+void screen() {      
   pushMatrix();
 
+
  scale(1,-1);
-    strokeWeight(2); 
+ noFill();   strokeWeight(2); 
 stroke(250,0,0);
    rect(200, -300, 170, 170, 7);
- 
+   rect(410, -300, 170, 170, 7);
   textFont(createFont("Arial", 35));   
   fill(250,10,10);
   text("attention",230, -150);
+  text("attention",380, -150);
 
 
     popMatrix();
@@ -128,7 +158,10 @@ stroke(250,0,0);
 
 
 
+
 void mouseMoved(){
+
+
 
 
   nY = mouseY;
@@ -137,7 +170,10 @@ void mouseMoved(){
 </script> 
 
 
+
+
 <canvas id="mycanvas" width="1100" height="600"></canvas></p>
 <div style="height:0px;width:0px;overflow:hidden;"></div>
 </body> 
 </html>
+
