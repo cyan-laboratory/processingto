@@ -93,14 +93,6 @@ int delay = 16;
   nX = X;
   nY = Y;  
 }
-
-
-
-
-
-
-
-
 void draw(){  
     background(0);
    
@@ -110,13 +102,18 @@ void draw(){
 
 void screen() {      
   pushMatrix();
+  rectMode(CENTER);
+  
+  strokeWeight(2); 
   scale(1,-1);
+   noFill();
    rect(100, -200, 170, 170, 7);
-   rect(-100, -200, 170, 170, 7);
+   rect(400, -200, 170, 170, 7);
  
-      textFont(createFont("Arial", 35));   
+  textFont(createFont("Arial", 35));   
   fill(250,10,10);
-  text("attention",440, -300);
+  text("attention",200, -300);
+  text("attention",100, -300);
     popMatrix();
    }
 
