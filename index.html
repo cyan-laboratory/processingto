@@ -85,7 +85,7 @@ int delay = 16;
 
   void setup()
 {
-  size(1280,720);
+  size(990,500);
   background(10);
   fill(100,100,250);
   println("Hello ErrorLog!");
@@ -95,8 +95,8 @@ int delay = 16;
   
   
     frameRate( 15 );
-  X = width / 2;
-  Y = height / 2;
+  X = 400;
+  Y = -300;
   nX = X;
   nY = Y;  
 }
@@ -153,16 +153,18 @@ textFont(createFont("Arial", 35));
     noFill();  stroke(250);
   rect(400, -400, 170, 170, 7);
   ellipse(490,-300,radius,radius);
+   // Track circle to new destination
+  X+=(nX-X)/delay;
+  Y+=(nY-Y)/delay;
+  // Draw circle
+  fill(250,100,250);
+  ellipse( X, Y, radius1, radius1 );  
 
   popMatrix();
 
   radius1 = radius1 + sin( frameCount / 4 );
   
-  // Track circle to new destination
-  X+=(nX-X)/delay;
-  Y+=(nY-Y)/delay;
-  // Draw circle
-  ellipse( X, Y, radius1, radius1 );   
+  
 
 }
 
