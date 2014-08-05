@@ -133,12 +133,12 @@ int delay = 16;
 void draw(){  
     background(250);
    
-      screen();
-    
+      screen1();
+    screen2();
 }
 
 
-void screen() {      
+void screen1() {      
   pushMatrix();
 
 
@@ -154,6 +154,31 @@ stroke(250,0,0);
 
 
     popMatrix();
+   }
+   
+   
+   
+   void screen2() { 
+     
+     
+     pushMatrix();
+
+
+ scale(1,-1);
+ noFill();   strokeWeight(2); 
+stroke(250,0,0);
+   rect(200, -300, 170, 170, 7);
+   rect(410, -300, 170, 170, 7);
+  textFont(createFont("Arial", 35));   
+  fill(250,10,10);
+  text("attention",210, -160);
+  text("attention",420, -160);
+
+
+    popMatrix();
+     
+     
+     
    }
 
 
