@@ -70,8 +70,8 @@ int delay = 16;
   
   
     frameRate( 15 );
-  X = 400;
-  Y = -300;
+  X = width / 2;
+  Y = height / 2;
   nX = X;
   nY = Y;  
 }
@@ -146,6 +146,7 @@ textFont(createFont("Arial", 35));
 }
 
 void mouseMoved(){
+    scale(1, -1);
   nX = mouseY;
   nY =mouseX ;  
 }
