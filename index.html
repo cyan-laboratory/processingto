@@ -130,7 +130,7 @@ textFont(createFont("Arial", 35));
   rect(400, -400, 170, 170, 7);
   ellipse(490,-300,radius,radius);
    // Track circle to new destination
-  nX+=(nX-X)/delay;
+  X+=(nX-X)/delay;
   Y+=(nY-Y)/delay;
   // Draw circle
   fill(0,0,250);
@@ -150,7 +150,7 @@ void mouseMoved(){
 }
 </script> 
 
-<canvas id="mycanvas" width="200" height="200"></canvas></p>
+<canvas id="mycanvas" width="990" height="500"></canvas></p>
 <div style="height:0px;width:0px;overflow:hidden;"></div>
 </body> 
 </html>
