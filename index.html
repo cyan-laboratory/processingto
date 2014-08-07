@@ -105,7 +105,7 @@ int delay = 16;
   background(50);
   fill(100,100,250);
   println("Hello ErrorLog!");
-hud = loadShape("HUD.svg");
+//hud = loadShape("HUD.svg");
 
 
 
@@ -132,8 +132,8 @@ void draw(){
 void screen1() {      
   pushMatrix();
 
-translate(-100, 0);
- scale(1,-1);
+translate(100, 0);
+ scale(1.2,-1.2);
  noFill();   strokeWeight(2); 
 stroke(250,0,0);
  
@@ -141,7 +141,7 @@ stroke(250,0,0);
   textFont(createFont("Arial", 35));   
   fill(250,10,10);
  
-  text("attention",420, -160);
+  text("attention",430, -160);
   String s = "The quick brown fox jumped over the lazy dog.";
   textFont(createFont("Arial", 15));  
 text(s, 440, -260, 70, 80);  // Text wraps within text box
@@ -156,20 +156,20 @@ text(s, 440, -260, 70, 80);  // Text wraps within text box
      
      pushMatrix();
 
-translate(-200+170/2, 0);
- scale(1,-1);
+translate(170, 0);
+ scale(1.2,-1.2);
  noFill();   strokeWeight(2); 
 stroke(250,0,0);
    ellipse(200, -300+170/2, 170, 170);
  
   textFont(createFont("Arial", 35));   
   fill(250,10,10);
-  text("attention",210, -160);
+  text("attention",135, -160);
  
 
   String s = "The quick brown fox jumped over the lazy dog.";
   textFont(createFont("Arial", 15));  
-text(s, 230, -260, 70, 80);  // Text wraps within text box
+text(s, 150, -260, 70, 80);  // Text wraps within text box
     popMatrix();
      
      
@@ -178,15 +178,6 @@ text(s, 230, -260, 70, 80);  // Text wraps within text box
 
 
 
-
-void mouseMoved(){
-
-
-
-
-  nY = mouseY;
-  nX =mouseX ;  
-}
 </script> 
 
 
