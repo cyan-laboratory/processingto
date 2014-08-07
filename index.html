@@ -125,10 +125,12 @@ void draw(){
    smooth();
 
 
-pushMatrix();
-translate(130, 0);
+pushMatrix(); scale(1.2,-1.2);
 
-   rect(410+170/2, -300+170/2, 170, 170,7);
+translate(130, 0);
+ noFill();   strokeWeight(2); 
+ stroke(250,0,0);
+   rect(410+170/2, -300+170/2, 200, 200,7);
 popMatrix();
 
 
