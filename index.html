@@ -132,12 +132,12 @@ void draw(){
 void screen1() {      
   pushMatrix();
 
-
+translate(-100, 170);
  scale(1,-1);
  noFill();   strokeWeight(2); 
 stroke(250,0,0);
  
-   ellipse(410, -300, 170, 170);
+   ellipse(410+170/2, -300, 170, 170);
   textFont(createFont("Arial", 35));   
   fill(250,10,10);
  
@@ -156,7 +156,7 @@ text(s, 440, -260, 70, 80);  // Text wraps within text box
      
      pushMatrix();
 
-translate(-100, 0);
+translate(-200+170/2, 170);
  scale(1,-1);
  noFill();   strokeWeight(2); 
 stroke(250,0,0);
