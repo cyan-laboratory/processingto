@@ -99,9 +99,9 @@ PShape hud;
 int X, Y;
 int nX, nY;
 int delay = 16;
-  void setup()
+   void setup()
 {
-  size(1400,500);
+  size(1400,500, P3D);
   background(50);
   fill(100,100,250);
   println("Hello ErrorLog!");
@@ -121,55 +121,29 @@ int delay = 16;
   nY = Y;  
 }
 void draw(){  
-    background(30);
-   smooth();
+background(30);
+smooth();
+pushMatrix();
+translate(90, -10);
+scale(1.2,-1.2);
+noFill();   strokeWeight(2); 
+rect(90,-310, 500, 200,7);
+    popMatrix();
 
-
-pushMatrix(); scale(1.2,-1.2);
-
-translate(130, 0);
- noFill();   strokeWeight(2); 
- stroke(250,0,0);
-popMatrix();
-
-
-
-      screen1();
-    screen2();
+      screen(100);
+    screen(400);
 }
 
 
-void screen1() {      
-  pushMatrix();
 
-translate(100, 0);
- scale(1.2,-1.2);
- noFill();   strokeWeight(2); 
-stroke(250,0,0);
- 
-   ellipse(410+170/2, -300+170/2, 170, 170);
-   
-   rect(140,-310, 500, 250,7);
-
-  textFont(createFont("Arial", 35));   
-  fill(250,10,10);
- 
-  text("attention",430, -160);
-  String s = "The quick brown fox jumped over the lazy dog.";
-  textFont(createFont("Arial", 15));  
-text(s, 440, -260, 70, 80);  // Text wraps within text box
-
-    popMatrix();
-   }
    
    
-   
-   void screen2() { 
+   void screen(int pos ) { 
      
      
      pushMatrix();
 
-translate(170, 0);
+translate(pos, -10);
  scale(1.2,-1.2);
  noFill();   strokeWeight(2); 
 stroke(250,0,0);
@@ -188,6 +162,8 @@ text(s, 150, -260, 70, 80);  // Text wraps within text box
      
      
    }
+
+
 
 
 
